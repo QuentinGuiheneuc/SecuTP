@@ -1,0 +1,9 @@
+<!DOCTYPE bar [
+<!ENTITY xxe SYSTEM "http://localhost/data.txt">]>
+<customers>
+<customer id="1">
+<name>John</name>
+</customer>
+<customer id="2">
+<name>Jane &xxe;</name>
+</customer></customers>
